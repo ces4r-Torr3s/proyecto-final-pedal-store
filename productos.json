@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "categoria": "pedales",
+    "nombre": "Behringer Chromatic Tuner",
+    "precio": 62000,
+    "imagen": "pedales/BEHRINGER-CHROMATIC-TUNER.jpg"
+  },
+  {
+    "id": 2,
+    "categoria": "pedales",
+    "nombre": "Behringer Ultra Vibrato",
+    "precio": 74000,
+    "imagen": "pedales/BEHRINGER-ULTRA-VIBRATO.jpg"
+  },
+  {
+    "id": 3,
+    "categoria": "pedales",
+    "nombre": "Boss Blues Driver",
+    "precio": 102500,
+    "imagen": "pedales/blues-driver-boss.jpg"
+  },
+  {
+    "id": 4,
+    "categoria": "pedales",
+    "nombre": "Boss Flanger",
+    "precio": 189900,
+    "imagen": "pedales/BOSS-FLANGER.jpg"
+  },
+  {
+    "id": 5,
+    "categoria": "pedales",
+    "nombre": "Vox Cry Baby",
+    "precio": 99500,
+    "imagen": "pedales/CRY-BABY.jpg"
+  },
+  {
+    "id": 6,
+    "categoria": "pedales",
+    "nombre": "Deluxe Memory Man",
+    "precio": 121900,
+    "imagen": "pedales/DELUX-MEMORY-MAN.jpg"
+  },
+  {
+    "id": 7,
+    "categoria": "pedales",
+    "nombre": "TC Hall of Fame",
+    "precio": 103000,
+    "imagen": "pedales/TC-ELECTRONIC.jpg"
+  },
+  {
+    "id": 8,
+    "categoria": "pedales",
+    "nombre": "Koko Tuner",
+    "precio": 50000,
+    "imagen": "pedales/TUNER-KOKO.jpg"
+  },
+  {
+    "id": 9,
+    "categoria": "pedaleras",
+    "nombre": "NUX M G-100",
+    "precio": 260000,
+    "imagen": "pedales/pedalera-nux-mg-100.jpg"
+  },
+  {
+    "id": 10,
+    "categoria": "pedaleras",
+    "nombre": "VOX STOMP LAB",
+    "precio": 274000,
+    "imagen": "pedales/pedalera-stomplab-VOX.jpg"
+  }
+]

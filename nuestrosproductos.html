@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="imagenes/pedalcito.png" />
+    <title>Nuestros Productos - PedalStore</title>
+    <link rel="stylesheet" href="css/nuestrosproductos.css" />
+</head>
+<body>
+
+  
+  <div id="loginModal" class="modal" style="display:none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 1000;">
+    <div class="modal-content" style="background:#2a2a2a; padding: 20px; border-radius: 10px; width: 300px; text-align: center; color:#fff;">
+      <h2>Iniciar sesión</h2>
+      <form id="loginForm">
+        <input type="text" id="loginUser" placeholder="Usuario" required style="width: 90%; padding: 8px; margin: 8px 0; border-radius: 5px; border:none;"/>
+        <input type="password" id="loginPass" placeholder="Contraseña" required style="width: 90%; padding: 8px; margin: 8px 0; border-radius: 5px; border:none;"/>
+        <button type="submit" style="padding: 10px 20px; border:none; border-radius: 8px; background-color:#00ffd5; color:#000; cursor:pointer;">Ingresar</button>
+      </form>
+      <p style="margin-top: 15px; cursor: pointer; color:#00ffd5;" onclick="toggleForms()">¿No tenés cuenta? Crear una</p>
+      <button onclick="cerrarModal()" style="margin-top:10px; background:#ff6600; border:none; color:#fff; padding: 5px 10px; border-radius: 5px; cursor:pointer;">Cerrar</button>
+    </div>
+  </div>
+
+  
+  <div id="registerModal" class="modal" style="display:none; position: fixed; top:0; left:0; width:100%; height:100%; background: rgba(0,0,0,0.7); justify-content: center; align-items: center; z-index: 1000;">
+    <div class="modal-content" style="background:#2a2a2a; padding: 20px; border-radius: 10px; width: 300px; text-align: center; color:#fff;">
+      <h2>Crear usuario</h2>
+      <form id="registerForm">
+        <input type="text" id="registerUser" placeholder="Nuevo usuario" required style="width: 90%; padding: 8px; margin: 8px 0; border-radius: 5px; border:none;"/>
+        <input type="password" id="registerPass" placeholder="Nueva contraseña" required style="width: 90%; padding: 8px; margin: 8px 0; border-radius: 5px; border:none;"/>
+        <button type="submit" style="padding: 10px 20px; border:none; border-radius: 8px; background-color:#00ffd5; color:#000; cursor:pointer;">Crear cuenta</button>
+      </form>
+      <p style="margin-top: 15px; cursor: pointer; color:#00ffd5;" onclick="toggleForms()">¿Ya tenés cuenta? Iniciar sesión</p>
+      <button onclick="cerrarModal()" style="margin-top:10px; background:#ff6600; border:none; color:#fff; padding: 5px 10px; border-radius: 5px; cursor:pointer;">Cerrar</button>
+    </div>
+  </div>
+
+  <header>
+    <h1>🎛️ ¡Bienvenido a <em>PedalStore</em>! 🎸</h1>
+    <img src="imagenes/mrshal-cabezal.jpg" alt="Cabezal Marshall clásico" width="300" height="200" />
+    <p>
+      <strong>PedalStore</strong> es una tienda digital ficticia dedicada a los amantes del sonido. 
+      Aquí encontrarás pedales de efectos para guitarras y bajos eléctricos. 
+      🔌🎶 Este proyecto es parte de una práctica de estudio. ¡Busca tu pedal y arma tu sonido!
+    </p>
+  </header>
+
+  <nav>
+    <p>🔗 Navegación rápida:</p>
+    <ul>
+      <li><a href="index.html" class="boton-nav">🏠 Inicio</a></li>
+      <li><a href="Sobrepedales.html" class="boton-nav">🎚️ Sobre pedales</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="pedales" class="producto">
+      <h2>🎸 <strong>PEDALES</strong> 🛒</h2>
+      <div class="galeria-pedales"></div>
+    </section>
+
+    <section id="pedaleras" class="producto">
+      <h2>🎸 <strong>PEDALERAS</strong></h2>
+      <div class="galeria-pedales"></div>
+    </section>
+  </main>
+
+  <div style="text-align: center; margin-top: 40px;">
+    <button 
+      onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" 
+      style="padding: 10px 20px; border-radius: 8px; background-color: #00ffd5; color: black; border: none; cursor: pointer; transition: transform 0.3s ease, background-color 0.3s ease;"
+      onmouseover="this.style.transform='scale(1.05)'; this.style.backgroundColor='#00e6c2';"
+      onmouseout="this.style.transform='scale(1)'; this.style.backgroundColor='#00ffd5';"
+    >Volver arriba</button>
+  </div>
+
+  <footer>
+    <p><strong>Oscar Cesar Torres</strong></p>
+    <a href="mailto:oscarwar50@gmail.com">Enviar correo</a>
+    <p><em>&copy; 2025 Todos los derechos de <strong>PedalStore</strong> están reservados.</em></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <script>
+   
+    function toggleForms() {
+      const loginModal = document.getElementById('loginModal');
+      const registerModal = document.getElementById('registerModal');
+      if (loginModal.style.display === 'flex') {
+        loginModal.style.display = 'none';
+        registerModal.style.display = 'flex';
+      } else {
+        registerModal.style.display = 'none';
+        loginModal.style.display = 'flex';
+      }
+    }
+
+    
+    function cerrarModal() {
+      document.getElementById('loginModal').style.display = 'none';
+      document.getElementById('registerModal').style.display = 'none';
+    }
+  </script>
+  
+</body>
+</html>
+
+

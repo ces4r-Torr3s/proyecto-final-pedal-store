@@ -1,0 +1,141 @@
+/* Fondo oscuro y texto claro */
+body {
+    background-color: #000000;
+    color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título del encabezado */
+header h1 {
+    color: #e9e2e2; /* blanco */
+    text-shadow: none;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+/* Imagen centrada */
+header img {
+    display: block;
+    margin: 20px auto;
+    border: 2px solid #2d2929;
+    border-radius: 8px;
+}
+
+/* Párrafo destacado */
+header p {
+    background-color: #522727;
+    color: #beb8b8; /* negro */
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    box-shadow: 0 4px 8px rgba(25, 22, 22, 0.4);
+}
+
+/* Navegación */
+nav {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000;
+}
+
+/* Estilo para los botones del nav */
+.boton-nav {
+    background-color: #888;        /* Color gris */
+    color: #fff;                   /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    display: inline-block;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.boton-nav:hover {
+    background-color: #aaa;        /* Gris más claro */
+    color: #000;                   /* Texto negro al pasar el mouse */
+}
+
+/* Main content */
+main {
+    padding: 20px;
+}
+
+main h1,
+main h2 {
+    text-align: center;
+    color: #d4d0d0;
+}
+
+main p {
+    background-color: #c23636;
+    color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+/* Sección de videos */
+main h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: #292929;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #f0f0f0;
+    padding: 20px 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
+    border-top: 2px solid #ff9900;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+footer a {
+    color: #ff9900;
+    text-decoration: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd580;
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin: 0;
+}
+
